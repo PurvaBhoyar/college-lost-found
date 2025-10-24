@@ -1,4 +1,4 @@
-package mediator;
+package backend.mediator;
 
 public class Finder extends User {
     public Finder(Mediator mediator, String name) {
