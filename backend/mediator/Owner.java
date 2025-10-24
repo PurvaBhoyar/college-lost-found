@@ -1,4 +1,4 @@
-package mediator;
+package backend.mediator;
 
 public class Owner extends User {
     public Owner(Mediator mediator, String name) {
