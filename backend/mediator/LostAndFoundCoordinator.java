@@ -1,4 +1,4 @@
-package mediator;
+package backend.mediator;
 
 public class LostAndFoundCoordinator implements Mediator {
     @Override
