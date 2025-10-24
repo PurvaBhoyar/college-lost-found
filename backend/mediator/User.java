@@ -1,4 +1,4 @@
-package mediator;
+package backend.mediator;
 
 public abstract class User {
     protected Mediator mediator;
