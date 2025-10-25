@@ -1,6 +1,6 @@
-package decorator;
+package backend.decorator;
 
-import factory.Item;
+import backend.factory.Item;
 
 public class RewardOffer extends ItemDecorator {
     private double rewardAmount;

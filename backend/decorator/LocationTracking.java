@@ -1,6 +1,6 @@
-package decorator;
+package backend.decorator;
 
-import factory.Item;
+import backend.factory.Item;
 
 public class LocationTracking extends ItemDecorator {
     private String lastLocation;
@@ -13,6 +13,6 @@ public class LocationTracking extends ItemDecorator {
     @Override
     public void verify() {
         item.verify();
-        System.out.println("📍 [Decorator] Last seen at: " + lastLocation);
+        System.out.println(" [Decorator] Last seen at: " + lastLocation);
     }
 }

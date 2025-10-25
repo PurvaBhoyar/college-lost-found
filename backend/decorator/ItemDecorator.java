@@ -1,6 +1,6 @@
-package decorator;
+package backend.decorator;
 
-import factory.Item;
+import backend.factory.Item;
 
 public abstract class ItemDecorator extends Item {
     protected Item item;   // The base item being decorated

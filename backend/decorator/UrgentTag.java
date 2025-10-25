@@ -1,6 +1,6 @@
-package decorator;
+package backend.decorator;
 
-import factory.Item;
+import backend.factory.Item;
 
 public class UrgentTag extends ItemDecorator {
 
@@ -11,6 +11,6 @@ public class UrgentTag extends ItemDecorator {
     @Override
     public void verify() {
         item.verify();
-        System.out.println("🔴 [Decorator] This item is marked as URGENT! Handle immediately.");
+        System.out.println("[Decorator] This item is marked as URGENT! Handle immediately.");
     }
 }

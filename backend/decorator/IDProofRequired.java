@@ -1,6 +1,6 @@
-package decorator;
+package backend.decorator;
 
-import factory.Item;
+import backend.factory.Item;
 
 public class IDProofRequired extends ItemDecorator {
 
