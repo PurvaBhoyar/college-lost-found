@@ -13,6 +13,7 @@ public class RewardOffer extends ItemDecorator {
     @Override
     public void displayItemDetails() {
         item.displayItemDetails();
-        System.out.println(" [Decorator] Reward offered: $" + rewardAmount);
+        // Use getter instead of direct field access
+        System.out.println(" [Decorator] Reward offered for " + item.getItemName() + ": $" + rewardAmount);
     }
 }
