@@ -13,6 +13,7 @@ public class LocationTracking extends ItemDecorator {
     @Override
     public void displayItemDetails() {
         item.displayItemDetails();
-        System.out.println(" [Decorator] Last seen at: " + lastLocation);
+        // Use getter instead of direct field access
+        System.out.println(" [Decorator] " + item.getItemName() + " last seen at: " + lastLocation);
     }
 }
