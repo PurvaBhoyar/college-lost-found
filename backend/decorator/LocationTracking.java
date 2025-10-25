@@ -11,8 +11,8 @@ public class LocationTracking extends ItemDecorator {
     }
 
     @Override
-    public void verify() {
-        item.verify();
+    public void displayItemDetails() {
+        item.displayItemDetails();
         System.out.println(" [Decorator] Last seen at: " + lastLocation);
     }
 }

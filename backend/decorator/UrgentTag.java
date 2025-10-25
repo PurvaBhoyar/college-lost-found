@@ -9,8 +9,8 @@ public class UrgentTag extends ItemDecorator {
     }
 
     @Override
-    public void verify() {
-        item.verify();
-        System.out.println("[Decorator] This item is marked as URGENT! Handle immediately.");
+    public void displayItemDetails() {
+        item.displayItemDetails();
+        System.out.println(" [Decorator] Marked as URGENT.");
     }
 }
