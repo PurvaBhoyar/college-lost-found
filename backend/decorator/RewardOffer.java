@@ -11,8 +11,8 @@ public class RewardOffer extends ItemDecorator {
     }
 
     @Override
-    public void verify() {
-        item.verify();
-        System.out.println("💰 [Decorator] Reward Offered: ₹" + rewardAmount + " for returning this item.");
+    public void displayItemDetails() {
+        item.displayItemDetails();
+        System.out.println(" [Decorator] Reward offered: $" + rewardAmount);
     }
 }

@@ -9,8 +9,8 @@ public class IDProofRequired extends ItemDecorator {
     }
 
     @Override
-    public void verify() {
-        item.verify();
-        System.out.println("🪪 [Decorator] ID proof is required to claim this item.");
+    public void displayItemDetails() {
+        item.displayItemDetails();
+        System.out.println(" [Decorator] ID proof required for verification.");
     }
 }
