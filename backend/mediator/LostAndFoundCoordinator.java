@@ -1,5 +1,5 @@
 package backend.mediator;
-import backend.factory.Item
+import backend.factory.Item;
 public class LostAndFoundCoordinator implements Mediator {
     @Override
     public void notify(String message, String event) {
