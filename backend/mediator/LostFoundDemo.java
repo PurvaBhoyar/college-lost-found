@@ -1,28 +1,20 @@
-package main;
+// File: backend/factory/LostFoundDemo.java
+package backend.factory;
 
-import factory.*;
-import decorator.*;
-import mediator.*;
+import java.time.LocalDate;
 
 public class LostFoundDemo {
     public static void main(String[] args) {
-        System.out.println("---- College Lost & Found Management System ----");
+        // Corrected call: provide type, itemId, itemName, ownerName, dateLost, extraType
+        Item javaBook = ItemFactory.createItem(
+                "Books",                          // type
+                "B002",                           // itemId
+                "Java Textbook",                  // itemName
+                "Alice",                          // ownerName
+                LocalDate.of(2025, 10, 20),       // dateLost
+                "OOP concepts with examples"      // extraType (author/description)
+        );
 
-        // 1. Factory pattern - create item
-        Item item = ItemFactory.createItem("book", "Java Textbook", "OOP concepts with examples");
-
-        // 2. Decorator pattern - add urgent tag
-        item = new UrgentTag(item);
-
-        // 3. Mediator pattern - handle communication
-        Mediator coordinator = new LostAndFoundCoordinator();
-        Finder finder = new Finder(coordinator, "Riya");
-        Owner owner = new Owner(coordinator, "Purva");
-
-        finder.foundItem(item.getDetails());
-        owner.claimItem("Java Textbook");
-
-        // Final verification
-        item.verify();
+        javaBook.displayItemDetails();
     }
 }
